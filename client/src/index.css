@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #23283B;
+  }
+
+  body {
+    background-color: #0B0D13;
+    color: #E2E8F0;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar for dense technical panels */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0B0D13;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #23283B;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3B4463;
+  }
+}
+
+/* React Flow Canvas custom dark theme overrides */
+.react-flow__pane {
+  background: #0B0D13 !important;
+}
+
+.react-flow__background {
+  background-color: #0B0D13 !important;
+}
+
+.react-flow__minimap {
+  background: #12151F !important;
+  border: 1px solid #23283B !important;
+  border-radius: 6px !important;
+}
+
+.react-flow__controls {
+  background: #12151F !important;
+  border: 1px solid #23283B !important;
+  border-radius: 6px !important;
+  overflow: hidden;
+}
+
+.react-flow__controls-button {
+  background: #12151F !important;
+  border-bottom: 1px solid #23283B !important;
+  fill: #717D9B !important;
+  color: #717D9B !important;
+}
+
+.react-flow__controls-button:hover {
+  background: #181C2A !important;
+  fill: #00D2FF !important;
+  color: #00D2FF !important;
+}
+
+.react-flow__edge-path {
+  stroke: #4A5578 !important;
+  stroke-width: 2 !important;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #00D2FF !important;
+  stroke-width: 2.5 !important;
+}
